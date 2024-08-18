@@ -1,1 +1,47 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16486598375c1f7509": {
+      "type": "image-with-text",
+      "blocks": {
+        "1648659837d80823f2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text"
+          }
+        },
+        "1648659837d80823f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This is where you enter the text.<\/p>"
+          }
+        },
+        "1648659837d80823f2-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1648659837d80823f2-0",
+        "1648659837d80823f2-1",
+        "1648659837d80823f2-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16486598375c1f7509"
+  ]
+}

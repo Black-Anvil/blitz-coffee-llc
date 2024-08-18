@@ -210,6 +210,18 @@
               {%- endfor -%}
             </tbody>
           </table>
+          <div class="additional-inputs">
+            <div>
+              <label for="fav_country">Choose your favorite country for coffee</label>
+              <select id="fav_country" name="attributes[Favorite Country]" required>
+                <option value="">--</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Ethiopia">Ethiopia</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Brazil">Brazil</option>
+              </select>
+            </div>
+          </div>
         {%- endif -%}
       </div>
     </div>

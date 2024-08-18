@@ -1,0 +1,55 @@
+<div class="page-width">
+    <h2 class="testimonial-heading">{{ section.settings.heading }}</h2>
+    <div class="testimonial-slider">
+        {% for block in section.blocks %}
+            <div class="testimonial-slide">
+                <div class="testimonial-icon">
+                    {% render 'icon-quotes' %}
+                </div>
+                <p class="testimonial-text">{{ block.settings.testimonial_text }}</p>
+                <img class="avatar" src="{{ block.settings.avatar | img_url }}">
+                <p class="testimonial-name">{{ block.settings.testimonial_name }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Testimonials slider",
+    "presets": [
+        {
+            "name": "Testimonials slider"
+        }
+    ],
+    "settings": [
+        {
+            "id": "heading",
+            "label": "Section Heading",
+            "type": "text"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "testimonial-slide",
+            "name": "Testimonial Slide",
+            "settings": [
+                {
+                    "id": "testimonial_name",
+                    "label": "Customer Name",
+                    "type": "text"
+                },
+                {
+                    "id": "testimonial_text",
+                    "label": "Customer Feedback",
+                    "type": "text"
+                },
+                {
+                    "id": "avatar",
+                    "label": "Customer Avatar",
+                    "type": "image_picker"
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}

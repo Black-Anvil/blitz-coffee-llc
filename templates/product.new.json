@@ -1,0 +1,90 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-test-product",
+      "blocks": {
+        "ba53f7fc-6c77-40fd-ac1a-8e2a58795818": {
+          "type": "product_price_block",
+          "settings": {
+          }
+        },
+        "73ad313a-0324-4e03-a197-b1db3ae41220": {
+          "type": "shipping_notice_block",
+          "settings": {
+            "shipping_notice_text": "Will NOT ship!"
+          }
+        }
+      },
+      "block_order": [
+        "ba53f7fc-6c77-40fd-ac1a-8e2a58795818",
+        "73ad313a-0324-4e03-a197-b1db3ae41220"
+      ],
+      "settings": {
+        "show_reviews": false
+      }
+    },
+    "1645487056d410d36e": {
+      "type": "image-with-text",
+      "blocks": {
+        "1645487056bac1ee04-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Test"
+          }
+        },
+        "1645487056bac1ee04-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Test test test<\/p>"
+          }
+        },
+        "1645487056bac1ee04-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Test button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1645487056bac1ee04-0",
+        "1645487056bac1ee04-1",
+        "1645487056bac1ee04-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about_4.jpg",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "second": {
+      "type": "main-test-product",
+      "blocks": {
+        "0e980c11-9b5d-4cd6-a1b7-49a20720ee0f": {
+          "type": "tax_notice_block",
+          "settings": {
+            "tax_notice_text": "Tax IS included!"
+          }
+        },
+        "dc1d8204-37d3-466f-9982-72287b6f24aa": {
+          "type": "product_price_block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "0e980c11-9b5d-4cd6-a1b7-49a20720ee0f",
+        "dc1d8204-37d3-466f-9982-72287b6f24aa"
+      ],
+      "settings": {
+        "show_reviews": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645487056d410d36e",
+    "second"
+  ]
+}

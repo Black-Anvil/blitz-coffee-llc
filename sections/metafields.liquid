@@ -1,0 +1,137 @@
+
+<h2>No filters</h2>
+
+shipping:
+{{ product.metafields.my_fields.shipping }}
+<br>
+test url:
+{{ product.metafields.my_fields.test_url }}
+<br>
+test boolean:
+{{ product.metafields.my_fields.test_boolean }}
+<br>
+test text:
+{{ product.metafields.my_fields.test_text }}
+<br>
+test reference:
+{{ product.metafields.my_fields.test_reference }}
+<br>
+test rating:
+{{ product.metafields.my_fields.test_rating }}
+<br>
+test number:
+{{ product.metafields.my_fields.test_number }}
+<br>
+test measurement:
+{{ product.metafields.my_fields.test_measurement }}
+<br>
+test json:
+{{ product.metafields.my_fields.test_json }}
+<br>
+test file:
+{{ product.metafields.my_fields.test_file }}
+<br>
+test date:
+{{ product.metafields.my_fields.test_date }}
+<br>
+test color:
+{{ product.metafields.my_fields.test_color }}
+
+<h2>Metafields Tag</h2>
+
+shipping:
+{{ product.metafields.my_fields.shipping | metafield_tag }}
+<br>
+test url:
+{{ product.metafields.my_fields.test_url | metafield_tag }}
+<br>
+test boolean:
+{{ product.metafields.my_fields.test_boolean | metafield_tag }}
+<br>
+test text:
+{{ product.metafields.my_fields.test_text | metafield_tag }}
+<br>
+test reference:
+{{ product.metafields.my_fields.test_reference | metafield_tag }}
+<br>
+test rating:
+{{ product.metafields.my_fields.test_rating | metafield_tag }}
+<br>
+test number:
+{{ product.metafields.my_fields.test_number | metafield_tag }}
+<br>
+test measurement:
+{{ product.metafields.my_fields.test_measurement | metafield_tag }}
+<br>
+test json:
+{{ product.metafields.my_fields.test_json | metafield_tag }}
+<br>
+test file:
+{{ product.metafields.my_fields.test_file | metafield_tag }}
+<br>
+test date:
+{{ product.metafields.my_fields.test_date | metafield_tag }}
+<br>
+test color:
+{{ product.metafields.my_fields.test_color | metafield_tag }}
+
+<h2>Metafields Text</h2>
+
+shipping:
+{{ product.metafields.my_fields.shipping | metafield_text }}
+<br>
+test url:
+{{ product.metafields.my_fields.test_url | metafield_text }}
+<br>
+test boolean:
+{{ product.metafields.my_fields.test_boolean | metafield_text }}
+<br>
+test text:
+{{ product.metafields.my_fields.test_text | metafield_text }}
+<br>
+test reference:
+{{ product.metafields.my_fields.test_reference | metafield_text }}
+<br>
+test rating:
+{{ product.metafields.my_fields.test_rating | metafield_text }}
+<br>
+test number:
+{{ product.metafields.my_fields.test_number | metafield_text }}
+<br>
+test measurement:
+{{ product.metafields.my_fields.test_measurement | metafield_text }}
+<br>
+test json:
+{{ product.metafields.my_fields.test_json | metafield_text }}
+<br>
+test file:
+{{ product.metafields.my_fields.test_file | metafield_text }}
+<br>
+test date:
+{{ product.metafields.my_fields.test_date | metafield_text }}
+<br>
+test color:
+{{ product.metafields.my_fields.test_color | metafield_text }}
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+    {
+        "name": "Metafields",
+        "settings": [],
+        "presets": [
+            {
+                "name": "Metafields"
+            }
+        ]
+    }
+
+{% endschema %}

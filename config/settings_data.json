@@ -1,1 +1,90 @@
-{}
+{
+  "current": {
+    "colors_accent_1": "#634832",
+    "social_twitter_link": "https:\/\/twitter.com\/shopify",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
+    "social_pinterest_link": "https:\/\/pinterest.com\/shopify",
+    "social_instagram_link": "http:\/\/instagram.com\/shopify",
+    "social_youtube_link": "https:\/\/www.youtube.com\/shopify",
+    "favicon": "shopify:\/\/shop_images\/coffee.png",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "text": "Coffee time ☕!",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Blitz_Coffee.png",
+          "logo_width": 200,
+          "logo_position": "middle-left",
+          "menu": "main-menu",
+          "show_line_separator": true,
+          "enable_sticky_header": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "d2574f4f-36d6-4f0c-8397-3170fdcef04f": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Navigation",
+              "menu": "main-menu"
+            }
+          },
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "913776f8-5fad-477e-b1b5-6b38c0cdbda8": {
+            "type": "text",
+            "settings": {
+              "heading": "Blitz Coffee",
+              "subtext": "<p>📍 666 Greenwich St., New York, NY 10014<br\/>📞 212-555-0143<br\/>📧 hello@blitzcoffee.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "d2574f4f-36d6-4f0c-8397-3170fdcef04f",
+          "footer-0",
+          "913776f8-5fad-477e-b1b5-6b38c0cdbda8"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "newsletter_enable": true,
+          "newsletter_heading": "4 Coffee Lovers 💗",
+          "show_social": true,
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "payment_enable": true
+        }
+      },
+      "main-test-product": {
+        "type": "main-test-product",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

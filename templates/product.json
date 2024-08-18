@@ -1,1 +1,243 @@
-{"sections":{"main":{"type":"main-product","blocks":{"vendor":{"type":"text","settings":{"text":"{{ product.vendor }}","text_style":"uppercase"}},"title":{"type":"title","settings":{}},"subtitle":{"type":"text","settings":{"text":"{{ product.metafields.descriptors.subtitle.value }}","text_style":"subtitle"}},"price":{"type":"price","settings":{}},"variant_picker":{"type":"variant_picker","settings":{}},"quantity_selector":{"type":"quantity_selector","settings":{}},"buy_buttons":{"type":"buy_buttons","settings":{}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{}}},"block_order":["vendor","title","subtitle","price","variant_picker","quantity_selector","buy_buttons","description","share"],"settings":{}},"product-recommendations":{"type":"product-recommendations","settings":{}}},"order":["main","product-recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+          }
+        },
+        "c59204aa-7eca-4506-aaf5-8a4a6102c9a9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Info",
+            "content": "<p>{{ product.metafields.my_fields.shipping.value }}<\/p>",
+            "page": "",
+            "icon": "truck"
+          }
+        },
+        "fa87f640-8be3-4303-8fc0-d3cebc950ac7": {
+          "type": "coffee_info",
+          "settings": {
+            "taste": "{{ product.metafields.my_fields.taste.value }}",
+            "strength": "{{ product.metafields.my_fields.strength | metafield_text }}",
+            "acidity": "{{ product.metafields.my_fields.acidity | metafield_text }}",
+            "type": "{{ product.metafields.my_fields.type.value }}",
+            "origin": "{{ product.metafields.my_fields.origin.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "subtitle",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "c59204aa-7eca-4506-aaf5-8a4a6102c9a9",
+        "fa87f640-8be3-4303-8fc0-d3cebc950ac7"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "enable_video_looping": false
+      }
+    },
+    "1645499505a8d85bc8": {
+      "type": "multicolumn",
+      "blocks": {
+        "164549950510a7faef-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/farmer.png",
+            "title": "Direct Relations to Farmers",
+            "text": "<p>Orci eu lobortis elementum nibh tellus molestie nunc. Egestas maecenas pharetra convallis posuere morbi. Diam vel quam elementum pulvinar etiam non quam. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Dictum sit amet justo donec enim diam vulputate. Ultrices neque ornare aenean euismod elementum nisi quis eleifend quam. <\/p>"
+          }
+        },
+        "164549950510a7faef-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/coffee-plant.png",
+            "title": "Plant a Tree for 3rd Order",
+            "text": "<p>Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. A lacus vestibulum sed arcu non odio euismod lacinia. Nisi lacus sed viverra tellus in hac. Elementum nisi quis eleifend quam adipiscing vitae proin. Risus feugiat in ante metus dictum. Rhoncus aenean vel elit scelerisque. Vestibulum morbi blandit cursus risus at ultrices mi tempus.<\/p>"
+          }
+        },
+        "164549950510a7faef-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/roaster.png",
+            "title": "Roasted by Hand in FL",
+            "text": "<p>Semper feugiat nibh sed pulvinar proin gravida hendrerit. Ac turpis egestas integer eget aliquet nibh praesent tristique. Felis eget velit aliquet sagittis id. Tellus in metus vulputate eu scelerisque. Dolor sit amet consectetur adipiscing elit duis. Est placerat in egestas erat. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Vitae purus faucibus ornare suspendisse.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164549950510a7faef-0",
+        "164549950510a7faef-1",
+        "164549950510a7faef-2"
+      ],
+      "settings": {
+        "title": "Our Promises ⭐",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1645675873b81ccabe": {
+      "type": "testimonials",
+      "blocks": {
+        "4f59d710-172a-441f-be64-f81d19c28396": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "John Grainger",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Accumsan tortor posuere ac ut consequat semper viverra nam. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Ut venenatis tellus in metus vulputate.",
+            "avatar": "shopify:\/\/shop_images\/3.jpg"
+          }
+        },
+        "4097a9a4-eeb3-497f-b674-21ef1a4c8927": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Juanito Tortas",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut venenatis. Dui vivamus arcu felis bibendum ut. Maecenas volutpat blandit aliquam etiam erat velit scelerisque in dictum.",
+            "avatar": "shopify:\/\/shop_images\/20.jpg"
+          }
+        },
+        "6f4a317a-3417-4b25-af24-90c3506682e2": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Douglas Rosas",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean et tortor at risus viverra. Est velit egestas dui id ornare. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in.",
+            "avatar": "shopify:\/\/shop_images\/30.jpg"
+          }
+        },
+        "311525d1-00fe-4d63-93b9-a11bc80f2669": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Karen Grey",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed arcu non odio. Et malesuada fames ac turpis egestas maecenas pharetra convallis. Diam sollicitudin tempor id eu nisl nunc mi ipsum.",
+            "avatar": "shopify:\/\/shop_images\/14.jpg"
+          }
+        },
+        "a9700c6a-4c2a-46ac-8ea0-acef8e4339bb": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Katia Sans",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta nibh venenatis cras sed. Massa sapien faucibus et molestie ac feugiat sed lectus vestibulum. Tristique senectus et netus et malesuada fames ac turpis egestas.",
+            "avatar": "shopify:\/\/shop_images\/77.jpg"
+          }
+        },
+        "91bcb301-6be3-41cc-8560-4375fd925cab": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Melissa Bournes",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Purus in mollis nunc sed id semper risus in hendrerit. In nibh mauris cursus mattis molestie a iaculis at. Convallis posuere morbi leo urna molestie.",
+            "avatar": "shopify:\/\/shop_images\/43.jpg"
+          }
+        },
+        "0b4d624c-9d47-4083-8f0b-40b3de37697e": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "William Brown",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis. Et netus et malesuada fames ac. Mauris a diam maecenas sed enim ut sem viverra.",
+            "avatar": "shopify:\/\/shop_images\/89.jpg"
+          }
+        },
+        "d32ee07d-7266-4daf-a6e3-bcc48d26099b": {
+          "type": "testimonial-slide",
+          "settings": {
+            "testimonial_name": "Brianna Kassoff",
+            "testimonial_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Id diam maecenas ultricies mi eget mauris. Felis imperdiet proin fermentum leo vel orci porta non.",
+            "avatar": "shopify:\/\/shop_images\/39.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "4f59d710-172a-441f-be64-f81d19c28396",
+        "4097a9a4-eeb3-497f-b674-21ef1a4c8927",
+        "6f4a317a-3417-4b25-af24-90c3506682e2",
+        "311525d1-00fe-4d63-93b9-a11bc80f2669",
+        "a9700c6a-4c2a-46ac-8ea0-acef8e4339bb",
+        "91bcb301-6be3-41cc-8560-4375fd925cab",
+        "0b4d624c-9d47-4083-8f0b-40b3de37697e",
+        "d32ee07d-7266-4daf-a6e3-bcc48d26099b"
+      ],
+      "settings": {
+        "heading": "Customer Testimonials"
+      }
+    },
+    "16455023910ac34b03": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "You May Also Like ❤",
+        "collection": "coffee",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": false,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645499505a8d85bc8",
+    "1645675873b81ccabe",
+    "16455023910ac34b03"
+  ]
+}
