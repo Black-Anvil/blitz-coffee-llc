@@ -72,6 +72,63 @@
   {%- endform -%}
 </div>
 
+<script>
+   
+
+    // used to display the serialized string that is sent as the form request
+    {% comment %} jQuery(function() {
+        jQuery('#ContactForm').submit(function(event) {
+            event.preventDefault();
+            var data = jQuery(this).serialize();
+
+            console.log('DATA: ', data);
+        });
+    }); {% endcomment %}
+
+    function sendContact(name, email, phone, comment) {
+        let escapedData = {
+            name: escape(name),
+            email: escape(email),
+            phone: escape(phone),
+            comment: escape(comment)
+        }
+
+        let data = 'form_type=contact&utf8=%E2%9C%93';
+        data += `&contact%5BName%5D=${escapedData.name}`;
+        data += `&contact%5Bemail%5D=${escapedData.email}`;
+        data += `&contact%5BPhone%20number%5D=${escapedData.phone}`;
+        data += `&contact%5BComment%5D=${escapedData.comment}`;
+
+        console.log ('ESCAPED DATA: ', data);
+
+        jQuery.post('/contact', data)
+            .done(function(response){
+                console.log('response: ', response);
+                const logErrors = jQuery(response).find('.errors').text();
+                if (logErrors != '' && logErrors != 'undefined'){
+                    alert(logErrors);
+                }
+                else {
+                    alert('success!');
+                }
+            }).fail(function(){alert('error could not submit');});
+            return false;
+    }
+
+
+
+    const contactForm = document.querySelector('#ContactForm');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.querySelector('#ContactForm-name').value;
+        const email = document.querySelector('#ContactForm-email').value;
+        const phone = document.querySelector('#ContactForm-phone').value;
+        const comment = document.querySelector('#ContactForm-body').value;
+        sendContact(name, email, phone, comment);
+    })
+
+</script>
+
 {% schema %}
 {
   "name": "t:sections.contact-form.name",

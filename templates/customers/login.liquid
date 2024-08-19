@@ -146,3 +146,55 @@
     </div>
   {%- endif -%}
 </div>
+
+
+<script>
+
+    // used to display the serialized string that is sent as the form request
+    {% comment %} jQuery(function() {
+        jQuery('#customer_login').submit(function(event) {
+            event.preventDefault();
+            var data = jQuery(this).serialize();
+
+            console.log('DATA: ', data);
+        });
+    });  {% endcomment %}
+
+    function login(email, password) {
+        let escapedData = {
+            email: escape(email),
+            password: escape(password).replace(/\+/g, '%2B')
+        }
+
+        let data = 'form_type=customer_login&utf8=%E2%9C%93';
+        data += `&customer%5Bemail%5D=${escapedData.email}`;
+        data += `&customer%5Bpassword%5D=${escapedData.password}`;
+
+        console.log ('ESCAPED DATA: ', data);
+
+        jQuery.post('/account/login', data)
+            .done(function(response){
+                console.log('response: ', response);
+                const logErrors = jQuery(response).find('.errors').text();
+                if (logErrors != '' && logErrors != 'undefined'){
+                    alert(logErrors);
+                }
+                else {
+                    window.location.pathname = '/account';
+                    // alert('success!');
+                }
+            }).fail(function(){alert('error could not submit');});
+            return false;
+    }
+
+
+
+    const loginForm = document.querySelector('#customer_login');
+    loginForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = document.querySelector('#CustomerEmail').value;
+        const password = document.querySelector('#CustomerPassword').value;
+        login(email, password);
+    })
+
+</script>
